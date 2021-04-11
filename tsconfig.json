@@ -3,10 +3,12 @@
     "target": "esnext",
     "module": "commonjs",
     "moduleResolution": "node",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowJs": true
   },
   "files": [
     "./src/http/get-api/index.ts",
+    "./src/http/post-graphql/index.ts",
     "./src/shared/sum.ts",
   ],
   "exclude": [
