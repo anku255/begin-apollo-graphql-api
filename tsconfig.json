@@ -7,9 +7,7 @@
     "allowJs": true
   },
   "files": [
-    "./src/http/get-api/index.ts",
     "./src/http/post-graphql/index.ts",
-    "./src/shared/sum.ts",
   ],
   "exclude": [
     "node_modules"
