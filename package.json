@@ -2,31 +2,15 @@
   "name": "begin-app",
   "version": "0.0.0",
   "description": "Begin basic Apollo GraphQL API",
-  "arc": {
-    "app": "apollo-app",
-    "http": [
-      {
-        "/graphql": {
-          "method": "post",
-          "src": "/graphql"
-        }
-      }
-    ],
-    "tables": [
-      {
-        "data": {
-          "scopeID": "*String",
-          "dataID": "**String",
-          "ttl": "TTL"
-        }
-      }
-    ]
-  },
   "scripts": {
-    "start": "npx sandbox",
+    "start": "npx sandbox -p 3000",
+    "build": "tsc",
     "test": "echo 'Add tests for your features.'"
   },
   "dependencies": {
     "@architect/sandbox": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
   }
 }
